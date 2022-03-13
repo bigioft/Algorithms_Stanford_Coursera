@@ -42,7 +42,7 @@ if __name__ == '__main__':
     for test_pair in testing_pairs:
         assert karatsuba_multiplication(test_pair[0], test_pair[1]) == (test_pair[0] * test_pair[1])
         print("Test " + str(test_pair) +
-              " passed wih result " + str(karatsuba_multiplication(test_pair[0], test_pair[1])) + ".")
+              " passed with result " + str(karatsuba_multiplication(test_pair[0], test_pair[1])) + ".")
     print("The result of the assignment according to the implemented Karatsuba multiplication is: ")
     print(str(karatsuba_multiplication(integer_1, integer_2)))
 
