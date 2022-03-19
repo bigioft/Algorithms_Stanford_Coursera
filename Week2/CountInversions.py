@@ -35,6 +35,5 @@ if __name__ == '__main__':
               " passed with result " + str(count_inversions(vec=test[0])[1]) + ".")
     with open('IntegerArray.txt', 'r') as f:
         exam_vec = [int(vec_val.strip("\r\n")) for vec_val in f.readlines()]
-
     print("The final response to the exercise is:")
     print(count_inversions(vec=exam_vec)[1])

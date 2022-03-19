@@ -38,7 +38,7 @@ def sort(list_of_numbers):
 if __name__ == '__main__':
     test_samples = [[3, 4, 2, 5, 8, 9, 1, 6, 0]]
     print("\n------------------------------------------------------------------------")
-    print("------------------- Mergesort implementation results -------------------")
+    print("------------------- MergeSort implementation results -------------------")
     print("------------------------------------------------------------------------")
     for test_sample in test_samples:
         print("Unsorted list: ")
