@@ -1,5 +1,6 @@
 # coding=utf-8
 import random
+import numpy as np
 n_comparisons = None
 
 
@@ -91,6 +92,16 @@ def quick_sort(list_of_numbers, pivot_element="random", initialize_counter=True)
         list_of_numbers[i:(i+1)] + \
         quick_sort(list_of_numbers[(i+1):n_num], pivot_element=pivot_element, initialize_counter=False)
     return list_of_numbers
+
+
+def int_list_generator(size, seed=10):
+    random.seed(seed)
+    generated_list = [random.randint(0, size*10) for _ in range(0, size)]
+    return generated_list
+
+
+def n_log_n_order(n):
+    return n * np.log(n)
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 # coding=utf-8
+import random
 
 
 def merge(list_1, list_2):
@@ -33,6 +34,12 @@ def sort(list_of_numbers):
         list_2 = sort(list_of_numbers[(n_num/2):n_num])
         list_of_numbers = merge(list_1, list_2)
         return list_of_numbers
+
+
+def int_list_generator(size, seed=10):
+    random.seed(seed)
+    generated_list = [random.randint(0, size*10) for _ in range(0, size)]
+    return generated_list
 
 
 if __name__ == '__main__':
