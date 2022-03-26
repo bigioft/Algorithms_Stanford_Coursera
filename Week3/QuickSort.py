@@ -7,6 +7,7 @@ n_comparisons = None
 def quick_sort_v0(list_of_numbers, pivot_element="random", initialize_counter=True):
     # TODO: proper description of the function
     """
+    QuickSort algorithm popping and sliding the list
 
     :rtype: list
     """
@@ -52,6 +53,7 @@ def quick_sort_v0(list_of_numbers, pivot_element="random", initialize_counter=Tr
 def quick_sort(list_of_numbers, pivot_element="random", initialize_counter=True):
     # TODO: proper description of the function
     """
+    Quicksort algorithm that follows the course's approach exactly
 
     :rtype: list
     """
